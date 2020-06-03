@@ -1,0 +1,15 @@
+.root{
+	-fx-background-image: url('ad.jpg');
+}
+.login{
+   -fx-background-image: url('out.png');
+}
+.homeroot{
+	-fx-background-image: url('tt.png');
+}
+.resroot{
+	-fx-background-image: url('ahwa.jpg');
+}
+.toolroot{
+	-fx-background-image: url('ahwa.jpg');
+}

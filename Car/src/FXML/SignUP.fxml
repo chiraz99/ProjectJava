@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="350.0" prefWidth="500.0" styleClass="login" stylesheets="@../application/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignupController">
+   <children>
+      <JFXTextField  labelFloat="true" unFocusColor="WHITE" layoutX="149.0" layoutY="108.0" prefHeight="25.0" prefWidth="203.0" promptText="  Entrer Votre Prénom" fx:id="EntrerPrenom">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField labelFloat="true" unFocusColor="WHITE" layoutX="149.0" layoutY="175.0" prefHeight="32.0" prefWidth="203.0" promptText="  Entrer Votre Mot de passe" fx:id="EntrerMotdepasse">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXRadioButton layoutX="149.0" layoutY="260.0" selected="true" text="Homme" textFill="#4d4d4d" fx:id="Homme" >
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton layoutX="278.0" layoutY="260.0" text="Femme" textFill="#4d4d4d"  fx:id="Femme" toggleGroup="$gender">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXRadioButton>
+      <Label layoutX="146.0" layoutY="235.0" prefHeight="17.0" prefWidth="132.0" text="  Choisir Sexe :" textFill="#4d4d4d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField unFocusColor="WHITE" layoutX="149.0" layoutY="280.0" prefHeight="25.0" prefWidth="203.0" promptText="  Pays" fx:id="Pays">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="signup" layoutX="149.0" layoutY="320.0" onAction="#SignUP" prefHeight="25.0" prefWidth="203.0" style="-fx-background-color: #25ACEA;" text="Sign UP" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="login" layoutX="419.0" layoutY="14.0" onAction="#loginAction" style="-fx-border-color: #ffffff;" text="Login" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="87.0" fitWidth="141.0" layoutX="184.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/chichci/kereba.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="29.0" layoutX="121.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/chichci/si.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="29.0" layoutX="124.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/chichci/lel.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="29.0" layoutX="124.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/chichci/ess.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

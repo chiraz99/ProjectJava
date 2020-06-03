@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchor" prefHeight="550.0" prefWidth="712.0"  xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+   <children>
+      <Pane prefHeight="549.0" prefWidth="205.0" styleClass="homeroot" stylesheets="@../application/style.css" >
+         <children>
+            <Label layoutX="31.0" layoutY="67.0" text="Location" textFill="#4d4d4d">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="99.0" layoutY="67.0" text="Voiture" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="anchoo" layoutY="122.0" prefHeight="398.0" prefWidth="205.0">
+               <children>
+                  <Label layoutX="10.0" layoutY="20.0" prefHeight="17.0" prefWidth="188.0" text="Bienvenue dans Location Voiture " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="9.0" layoutY="37.0" prefHeight="17.0" prefWidth="165.0" text="Içi , Vous trouverez" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="8.0" layoutY="54.0" text="Les informations des Voitures" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="112.0" text="Tableau de bord" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="voiture" layoutX="30.0" layoutY="165.0" prefHeight="34.0" onAction="#homeAction"  prefWidth="149.0" text="Voitures" textFill="#e8cfcf">
+                     <font>
+                        <Font name="Corbel" size="18.0" />
+                     </font>
+                 </JFXButton>
+                  <JFXButton layoutX="30.0" layoutY="165.0" prefHeight="25.0" prefWidth="37.0" style="-fx-background-color: #25ACEA;" text="0" textFill="WHITE" />
+                  <Line endX="-1.0" layoutX="185.0" layoutY="300.0" startX="-170.0" stroke="WHITE" />
+                 
+                     <JFXButton fx:id="quitter"  layoutX="23.0" layoutY="326.0" onAction="#QuittAction" prefHeight="32.0" prefWidth="155.0" style="-fx-border-color: WHITE;" text="Quitter" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="sedeco" layoutX="23.0" layoutY="370.0" onAction="#DecoAction" prefHeight="35.0" prefWidth="156.0" style="-fx-border-color: WHITE;" text="Déconnecter" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+               </children>
+            </AnchorPane>
+            <Line endX="-30.0" layoutX="103.0" layoutY="112.0" startX="-100.0" stroke="WHITE" />
+            <ImageView fitHeight="62.0" fitWidth="67.0" layoutX="68.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/chichci/kereba.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <JFXToolbar fx:id="toolBar" layoutX="205.0" prefHeight="43.0" prefWidth="507.0" styleClass="homeroot" stylesheets="@../application/style.css">
+         <center>
+            <Text fx:id="Bienvu" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue," wrappingWidth="177.3173828125" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </Text>
+         </center>
+         <top>
+            <JFXToolbar prefHeight="0.0" prefWidth="453.0" BorderPane.alignment="CENTER" />
+         </top>
+      </JFXToolbar>
+      <AnchorPane fx:id="holderPane" layoutX="226.0" layoutY="52.0" prefHeight="484.0" prefWidth="480.0">
+         <children>
+            <JFXButton fx:id="Nissancar" alignment="BOTTOM_CENTER" layoutY="173.0"  onAction="#NissanAction" prefHeight="122.0" prefWidth="465.0" styleClass="homeroot" stylesheets="@../application/style.css" text="Nissan" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="Audicar" alignment="BOTTOM_CENTER" layoutY="23.0" onAction="#AudiAction" prefHeight="122.0" prefWidth="465.0" styleClass="homeroot" stylesheets="@../application/style.css" text="Audi" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="85.0" fitWidth="149.0" layoutX="173.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/ph/nissan.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="107.0" fitWidth="166.0" layoutX="159.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/ph/ftt.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="Citroencar" alignment="BOTTOM_CENTER" layoutY="324.0" onAction="#CitroenAction" prefHeight="122.0" prefWidth="465.0" styleClass="homeroot" stylesheets="@../application/style.css" text="Citroën" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="83.0" fitWidth="188.0" layoutX="149.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/ph/citroen.png" />
+               </image>
+            </ImageView>
+         
+            <Label layoutX="376.0" layoutY="130.0" text=" Cliquer pour entrer" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="376.0" layoutY="280.0" text=" Cliquer pour entrer" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="376.0" layoutY="431.0" text=" Cliquer pour entrer" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="10.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

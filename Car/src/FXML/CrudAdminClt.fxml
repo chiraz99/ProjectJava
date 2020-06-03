@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="385.0" prefWidth="592.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CrudAdCltController">
+   <children>
+      <TableView fx:id="tablePerson" layoutX="20.0" layoutY="38.0" prefHeight="333.0" prefWidth="417.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colprenom" prefWidth="83.0" text="Prénom" />
+            <TableColumn fx:id="colmdp" prefWidth="99.0" text="Password" />
+            <TableColumn fx:id="colpays" prefWidth="74.0" text="Pays" />
+            <TableColumn fx:id="colgender" prefWidth="83.0" text="Genre" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnreturn" layoutX="7.0" layoutY="8.0" onAction="#ReturnAction" text="🏠" textFill="#4a65c6" />
+   </children>
+</AnchorPane>

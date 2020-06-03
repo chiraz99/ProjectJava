@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="797.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AudiController">
+   <children>
+      <TableView fx:id="table" layoutX="21.0" layoutY="62.0" prefHeight="409.0" prefWidth="756.0">
+        <columns>
+          <TableColumn fx:id="colid" prefWidth="75.0" text="ID Voiture" />
+            <TableColumn fx:id="colnom" prefWidth="86.0" text="Nom Voiture" />
+            <TableColumn fx:id="colcarb" prefWidth="86.0" text="Carburant" />
+            <TableColumn fx:id="colpuiss" prefWidth="70.0" text="Puissance" />
+            <TableColumn fx:id="colporte" prefWidth="88.0" text="Nombre Porte" />
+            <TableColumn fx:id="colplace" prefWidth="90.0" text="Nombre Place" />
+            <TableColumn fx:id="colprix" prefWidth="84.0" text="Prix (1 jour)" />
+            <TableColumn fx:id="colnature" prefWidth="99.0" text="Nature Voiture" />
+            <TableColumn fx:id="colreserver" prefWidth="77.0" text="Réserver" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnreturn" layoutX="2.0" layoutY="-1.0" onAction="#ReturnAction" prefHeight="30.0" prefWidth="34.0" text="⬅" textAlignment="CENTER" textFill="#4a65c6">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="78.0" layoutY="21.0" text=" DÉBUT DE LOCATION" textFill="#4a65c6">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="428.0" layoutY="21.0" text="FIN DE LOCATION" textFill="#4a65c6">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+     
+      <JFXButton fx:id="resrevebtn" layoutX="700.0" layoutY="435.0" onAction="#ReserveAction" prefHeight="25.0" prefWidth="103.0" text="Reserver" />
+   </children>
+</AnchorPane>

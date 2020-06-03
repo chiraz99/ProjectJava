@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="501.0" prefWidth="797.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CrudAdmCarController">
+   <children>
+      <TableView fx:id="table" layoutX="193.0" layoutY="21.0" onMouseClicked="#TableItemSelected" prefHeight="386.0" prefWidth="590.0">
+        <columns>
+            <TableColumn fx:id="colnom" prefWidth="91.0" text="Nom Voiture" />
+            <TableColumn fx:id="colcarb" prefWidth="76.0" text="Carbuant" />
+            <TableColumn fx:id="colpuiss" prefWidth="76.0" text="Puissance" />
+            <TableColumn fx:id="colporte" prefWidth="89.0" text="Nombre Porte" />
+            <TableColumn fx:id="colplace" prefWidth="96.0" text="Nombre Place" />
+            <TableColumn fx:id="colprix" prefWidth="75.0" text="Prix(1jour)" />
+            <TableColumn fx:id="colnature" prefWidth="120.0" text="Nature Voiture " />
+            <TableColumn fx:id="coldateD" prefWidth="75.0" text="Date debut" />
+            <TableColumn fx:id="coldateF" prefWidth="75.0" text="Date fin" />
+            <TableColumn fx:id="colId" prefWidth="75.0" text="ID Voiture" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutY="-10.0" prefHeight="513.0" prefWidth="185.0" style="-fx-background-color: #2B252e;">
+         <children>
+            <JFXButton fx:id="btnreturn" layoutX="10.0" layoutY="7.0" onAction="#ReturnAction" prefHeight="30.0" prefWidth="34.0" text="🏠" textAlignment="CENTER" textFill="#4a65c6">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="delete" layoutX="27.0" layoutY="442.0" onAction="#DeleteAction" prefHeight="29.0" prefWidth="131.0" style="-fx-background-color: #25ACEA;" text="Supprimer" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="add" layoutX="27.0" layoutY="368.0" onAction="#AddAction" prefHeight="29.0" prefWidth="131.0" style="-fx-background-color: #25ACEA;" text="Ajouter" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="txtnomvo" layoutX="18.0" layoutY="76.0" promptText="Nom Voiture" />
+            <TextField fx:id="txtcarb" layoutX="18.0" layoutY="108.0" promptText="Carburant" />
+            <TextField fx:id="txtpui" layoutX="18.0" layoutY="139.0" promptText="Puissance" />
+            <TextField fx:id="txtnbporte" layoutX="18.0" layoutY="170.0" promptText="Nombre Porte" />
+            <TextField fx:id="txtnbplace" layoutX="18.0" layoutY="201.0" promptText="Nombre Place" />
+            <TextField fx:id="txtprix" layoutX="18.0" layoutY="232.0" promptText="Prix" />
+            <TextField fx:id="txtID" layoutX="18.0" layoutY="44.0" promptText="ID Voiture" />
+            <TextField fx:id="txtnaturev" layoutX="18.0" layoutY="263.0" promptText="Nature Voiture" />
+            <JFXButton fx:id="Update" layoutX="27.0" layoutY="404.0" onAction="#UpdateAction" prefHeight="29.0" prefWidth="131.0" style="-fx-background-color: #25ACEA;" text="Modifier" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            
+         </children>
+      </AnchorPane>
+     
+   </children>
+</AnchorPane>
